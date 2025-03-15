@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>454</width>
+    <height>573</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>454</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>454</width>
+    <height>573</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Authenticate App</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #f9f9f9;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>704</width>
+      <height>564</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="main_layout" stretch="0,1">
+     <property name="spacing">
+      <number>16</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="leftMargin">
+      <number>16</number>
+     </property>
+     <property name="topMargin">
+      <number>16</number>
+     </property>
+     <property name="rightMargin">
+      <number>16</number>
+     </property>
+     <property name="bottomMargin">
+      <number>16</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="form_layout" stretch="0,0,0">
+       <property name="spacing">
+        <number>8</number>
+       </property>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="lineedits_layout">
+         <item>
+          <layout class="QVBoxLayout" name="name_layout">
+           <property name="spacing">
+            <number>4</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="name_label">
+             <property name="styleSheet">
+              <string notr="true">padding-left: 2px;
+color: #5a5a5a;</string>
+             </property>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="name_lineedit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">width: 400px;
+height: 30px;
+background-color: #e9e9e9;
+border: 1px solid #828282;
+border-radius: 8px;
+font-family: Montserrat, sans-serif;
+font-size: 1.3rem;
+outline: none;
+padding: 0 6px;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="name_error_label">
+             <property name="styleSheet">
+              <string notr="true">padding-left: 2px;
+color: #a10e0e;</string>
+             </property>
+             <property name="text">
+              <string>Error!</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="surname_layout">
+           <property name="spacing">
+            <number>4</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="surname_label">
+             <property name="styleSheet">
+              <string notr="true">padding-left: 2px;
+color: #5a5a5a;</string>
+             </property>
+             <property name="text">
+              <string>Surname</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="surname_lineedit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">width: 400px;
+height: 30px;
+background-color: #e9e9e9;
+border: 1px solid #828282;
+border-radius: 8px;
+font-family: Montserrat, sans-serif;
+font-size: 1.3rem;
+outline: none;
+padding: 0 6px;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="surname_error_label">
+             <property name="styleSheet">
+              <string notr="true">padding-left: 2px;
+color: #a10e0e;</string>
+             </property>
+             <property name="text">
+              <string>Error!</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="phone_layout">
+           <property name="spacing">
+            <number>4</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="phone_label">
+             <property name="styleSheet">
+              <string notr="true">padding-left: 2px;
+color: #5a5a5a;</string>
+             </property>
+             <property name="text">
+              <string>Phone number (without whitespaces)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="phone_lineedit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">width: 400px;
+height: 30px;
+background-color: #e9e9e9;
+border: 1px solid #828282;
+border-radius: 8px;
+font-family: Montserrat, sans-serif;
+font-size: 1.3rem;
+outline: none;
+padding: 0 6px;</string>
+             </property>
+             <property name="inputMask">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="phone_error_label">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">padding-left: 2px;
+color: #a10e0e;</string>
+             </property>
+             <property name="text">
+              <string>Error!</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="email_layout">
+           <property name="spacing">
+            <number>4</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="email_label">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">padding-left: 2px;
+color: #5a5a5a;</string>
+             </property>
+             <property name="text">
+              <string>Email</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="email_lineedit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">width: 400px;
+height: 30px;
+background-color: #e9e9e9;
+border: 1px solid #828282;
+border-radius: 8px;
+font-family: Montserrat, sans-serif;
+font-size: 1.3rem;
+outline: none;
+padding: 0 6px;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="email_error_label">
+             <property name="styleSheet">
+              <string notr="true">padding-left: 2px;
+color: #a10e0e;</string>
+             </property>
+             <property name="text">
+              <string>Error!</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="password_layout" stretch="0,0,0">
+           <property name="spacing">
+            <number>4</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="password_label">
+             <property name="styleSheet">
+              <string notr="true">padding-left: 2px;
+color: #5a5a5a;</string>
+             </property>
+             <property name="text">
+              <string>Password</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="password_lineedit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">width: 400px;
+height: 30px;
+background-color: #e9e9e9;
+border: 1px solid #828282;
+border-radius: 8px;
+font-family: Montserrat, sans-serif;
+font-size: 1.3rem;
+outline: none;
+padding: 0 6px;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="password_error_label">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">padding-left: 2px;
+color: #a10e0e;</string>
+             </property>
+             <property name="text">
+              <string>Error!</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::MinimumExpanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="signin_btns_layout">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="submit_btn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">width: 400px;
+border: none;
+border-radius: 8px;
+color: #fff;
+outline: none;
+padding: 8px 10px;
+font-size: 1.5rem;
+background-color: #7070ff;</string>
+           </property>
+           <property name="text">
+            <string>Register</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="phone_signin_btn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">width: 400px;
+border: 1px solid #969696;
+border-radius: 8px;
+color: #8282ff;
+outline: none;
+padding: 8px 10px;
+font-size: 1.5rem;</string>
+           </property>
+           <property name="text">
+            <string>Authenticate with phone</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="email_signin_btn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">width: 400px;
+border: 1px solid #969696;
+border-radius: 8px;
+color: #8282ff;
+outline: none;
+padding: 8px 10px;
+font-size: 1.5rem;</string>
+           </property>
+           <property name="text">
+            <string>Authenticate with email</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="registration_btn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">width: 400px;
+border: 1px solid #969696;
+border-radius: 8px;
+color: #8282ff;
+outline: none;
+padding: 8px 10px;
+font-size: 1.5rem;</string>
+           </property>
+           <property name="text">
+            <string>Registration</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="profile_layout" stretch="1,1">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="topMargin">
+        <number>230</number>
+       </property>
+       <property name="bottomMargin">
+        <number>230</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="welcome_label">
+         <property name="styleSheet">
+          <string notr="true">color: #5a5a5a;
+font-size: 18px;
+font-weight: 700;</string>
+         </property>
+         <property name="text">
+          <string>Welcome PLACEHOLDER!</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="send_activation_email_btn">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 8px;
+color: #fff;
+outline: none;
+padding: 8px 10px;
+font-size: 1.5rem;
+background-color: #7070ff;</string>
+         </property>
+         <property name="text">
+          <string>Send an account activation mail</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>454</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

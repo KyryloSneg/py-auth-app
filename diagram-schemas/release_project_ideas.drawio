@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.0">
+  <diagram name="Страница — 1" id="3xjqtm19Wbulf4taEKGT">
+    <mxGraphModel dx="880" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="H3CZn5bD057ALre-hYYf-1" value="validate email with regex (&quot;re&quot; lib)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="294" y="80" width="206" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H3CZn5bD057ALre-hYYf-2" value="validate phone number with &quot;phonenumbers&quot; lib" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="294" y="170" width="306" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H3CZn5bD057ALre-hYYf-3" value="use mongodb, pyqt5" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="294" width="306" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H3CZn5bD057ALre-hYYf-4" value="validate QLineEdits with&amp;nbsp;QRegExpValidator (&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 33, 255));&quot;&gt;https://www.youtube.com/watch?v=7YzxUl0etgg&lt;/font&gt;)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="294" y="260" width="306" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H3CZn5bD057ALre-hYYf-5" value="user can either sign in (with email or phone number) or sign up" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="294" y="340" width="336" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H3CZn5bD057ALre-hYYf-6" value="user auths =&amp;gt; a window with (editable???) user info is shown =&amp;gt; user can activate his acc by clicking the button with 60s delay, so &quot;Activated&quot; status is shown" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="294" y="420" width="446" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C4_pyHaCY4V-SN10agdB-1" value="\p{L} works in python regexes (would be useful for name, surname inputs)???" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="294" y="500" width="446" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C4_pyHaCY4V-SN10agdB-2" value="password hashing / checking (&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(12, 69, 255));&quot;&gt;https://stackoverflow.com/questions/9594125/salt-and-hash-a-password-in-python&lt;/font&gt;)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="294" y="584.5" width="606" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W-xjcNWioluh_TjxjHAI-1" value="we are navigating from the auth window to the user profile by hiding and showing corresponding layouts (form_layout and profile_layout) (&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(10, 2, 255));&quot;&gt;https://stackoverflow.com/questions/29275319/how-to-hide-a-layout-in-pyqt&lt;/font&gt;)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="294" y="660" width="606" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W-xjcNWioluh_TjxjHAI-2" value="change the form submit btn&#39;s text and submit logic by clicking corresponding &quot;bottom&quot; gray btns (one of them is always hidden)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="294" y="740" width="606" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
