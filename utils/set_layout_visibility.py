@@ -3,7 +3,11 @@ def set_layout_children_hidden(layout, is_hidden):
   
   while i >= 0:
       widget = layout.itemAt(i).widget()
-      widget.setHidden(is_hidden)
+      
+      # skip manually hidden widgets
+      if not widget.property("is_hidden_manually"):
+          widget.setHidden(is_hidden)
+        
       i -= 1
   
   
