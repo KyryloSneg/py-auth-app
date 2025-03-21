@@ -14,20 +14,20 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(454, 573)
+        MainWindow.resize(454, 619)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
         MainWindow.setSizePolicy(sizePolicy)
-        MainWindow.setMinimumSize(QtCore.QSize(454, 573))
-        MainWindow.setMaximumSize(QtCore.QSize(454, 573))
+        MainWindow.setMinimumSize(QtCore.QSize(454, 619))
+        MainWindow.setMaximumSize(QtCore.QSize(454, 619))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("ui\\../assets/app-icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet("background-color: #f9f9f9;")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.centralwidget.sizePolicy().hasHeightForWidth())
@@ -36,7 +36,7 @@ class Ui_MainWindow(object):
         self.centralwidget.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.centralwidget.setObjectName("centralwidget")
         self.horizontalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(0, 0, 704, 570))
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(0, 0, 740, 614))
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
         self.main_layout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
         self.main_layout.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
@@ -220,11 +220,11 @@ class Ui_MainWindow(object):
         self.password_layout.addWidget(self.password_error_label)
         self.lineedits_layout.addLayout(self.password_layout)
         self.form_layout.addLayout(self.lineedits_layout)
-        spacerItem = QtWidgets.QSpacerItem(20, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.MinimumExpanding)
-        self.form_layout.addItem(spacerItem)
         self.signin_btns_layout = QtWidgets.QVBoxLayout()
         self.signin_btns_layout.setSpacing(8)
         self.signin_btns_layout.setObjectName("signin_btns_layout")
+        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.signin_btns_layout.addItem(spacerItem)
         self.submit_btn = QtWidgets.QPushButton(self.horizontalLayoutWidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -293,19 +293,66 @@ class Ui_MainWindow(object):
         self.form_layout.addLayout(self.signin_btns_layout)
         self.main_layout.addLayout(self.form_layout)
         self.profile_layout = QtWidgets.QVBoxLayout()
-        self.profile_layout.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
-        self.profile_layout.setContentsMargins(-1, 230, -1, 230)
+        self.profile_layout.setSizeConstraint(QtWidgets.QLayout.SetFixedSize)
+        self.profile_layout.setContentsMargins(-1, 200, -1, 200)
+        self.profile_layout.setSpacing(0)
         self.profile_layout.setObjectName("profile_layout")
         self.welcome_label = QtWidgets.QLabel(self.horizontalLayoutWidget)
-        self.welcome_label.setStyleSheet("color: #5a5a5a;\n"
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.welcome_label.sizePolicy().hasHeightForWidth())
+        self.welcome_label.setSizePolicy(sizePolicy)
+        self.welcome_label.setStyleSheet("max-width: 424px;\n"
+"color: #5a5a5a;\n"
 "font-size: 18px;\n"
 "font-weight: 700;")
         self.welcome_label.setAlignment(QtCore.Qt.AlignCenter)
         self.welcome_label.setObjectName("welcome_label")
         self.profile_layout.addWidget(self.welcome_label)
+        self.activation_code_layout = QtWidgets.QVBoxLayout()
+        self.activation_code_layout.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
+        self.activation_code_layout.setSpacing(8)
+        self.activation_code_layout.setObjectName("activation_code_layout")
+        self.activation_code_label = QtWidgets.QLabel(self.horizontalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.activation_code_label.sizePolicy().hasHeightForWidth())
+        self.activation_code_label.setSizePolicy(sizePolicy)
+        self.activation_code_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.activation_code_label.setObjectName("activation_code_label")
+        self.activation_code_layout.addWidget(self.activation_code_label)
+        self.activation_code_lineedit = QtWidgets.QLineEdit(self.horizontalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.activation_code_lineedit.sizePolicy().hasHeightForWidth())
+        self.activation_code_lineedit.setSizePolicy(sizePolicy)
+        self.activation_code_lineedit.setMinimumSize(QtCore.QSize(0, 0))
+        self.activation_code_lineedit.setStyleSheet("height: 30px;\n"
+"background-color: #e9e9e9;\n"
+"border: 1px solid #828282;\n"
+"border-radius: 8px;\n"
+"font-family: Montserrat, sans-serif;\n"
+"font-size: 1.3rem;\n"
+"outline: none;\n"
+"padding: 0 6px;\n"
+"margin: 0 auto;")
+        self.activation_code_lineedit.setAlignment(QtCore.Qt.AlignCenter)
+        self.activation_code_lineedit.setObjectName("activation_code_lineedit")
+        self.activation_code_layout.addWidget(self.activation_code_lineedit)
+        self.profile_layout.addLayout(self.activation_code_layout)
         self.send_activation_email_btn = QtWidgets.QPushButton(self.horizontalLayoutWidget)
-        self.send_activation_email_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.send_activation_email_btn.setStyleSheet("border: none;\n"
+        self.send_activation_email_btn.setEnabled(False)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.send_activation_email_btn.sizePolicy().hasHeightForWidth())
+        self.send_activation_email_btn.setSizePolicy(sizePolicy)
+        self.send_activation_email_btn.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.send_activation_email_btn.setStyleSheet("max-width: 404px;\n"
+"border: none;\n"
 "border-radius: 8px;\n"
 "color: #fff;\n"
 "outline: none;\n"
@@ -314,8 +361,6 @@ class Ui_MainWindow(object):
 "background-color: #7070ff;")
         self.send_activation_email_btn.setObjectName("send_activation_email_btn")
         self.profile_layout.addWidget(self.send_activation_email_btn)
-        self.profile_layout.setStretch(0, 1)
-        self.profile_layout.setStretch(1, 1)
         self.main_layout.addLayout(self.profile_layout)
         self.main_layout.setStretch(1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
@@ -348,6 +393,9 @@ class Ui_MainWindow(object):
         self.email_signin_btn.setText(_translate("MainWindow", "Authenticate with email"))
         self.registration_btn.setText(_translate("MainWindow", "Registration"))
         self.welcome_label.setText(_translate("MainWindow", "Welcome PLACEHOLDER!"))
+        self.activation_code_label.setText(_translate("MainWindow", "Check your email and type in the activation code"))
+        self.activation_code_lineedit.setInputMask(_translate("MainWindow", "999 999"))
+        self.activation_code_lineedit.setText(_translate("MainWindow", " "))
         self.send_activation_email_btn.setText(_translate("MainWindow", "Send an account activation mail"))
 
 

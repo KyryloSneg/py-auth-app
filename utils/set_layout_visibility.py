@@ -3,10 +3,16 @@ def set_layout_children_hidden(layout, is_hidden):
   
   while i >= 0:
       widget = layout.itemAt(i).widget()
+      nested_layout = layout.itemAt(i).layout()
       
       # skip manually hidden widgets
-      if not widget.property("is_hidden_manually"):
-          widget.setHidden(is_hidden)
+      if widget: 
+          if not widget.property("is_hidden_manually"):
+              widget.setHidden(is_hidden)
+      elif nested_layout:
+        # it's layout
+        if not nested_layout.property("is_hidden_manually"):
+            set_layout_children_hidden(nested_layout, is_hidden)
         
       i -= 1
   
