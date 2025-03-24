@@ -57,6 +57,9 @@
      <height>16777215</height>
     </size>
    </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
@@ -86,15 +89,49 @@
       <number>16</number>
      </property>
      <item>
-      <layout class="QVBoxLayout" name="form_layout" stretch="0,0">
+      <layout class="QVBoxLayout" name="form_layout" stretch="0,0,0">
        <property name="spacing">
-        <number>8</number>
+        <number>0</number>
        </property>
        <property name="sizeConstraint">
         <enum>QLayout::SetDefaultConstraint</enum>
        </property>
        <item>
+        <widget class="QLabel" name="invisible_label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>264</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>264</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
         <layout class="QVBoxLayout" name="lineedits_layout">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <property name="bottomMargin">
+          <number>8</number>
+         </property>
          <item>
           <layout class="QVBoxLayout" name="name_layout">
            <property name="spacing">
